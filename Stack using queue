@@ -1,0 +1,39 @@
+import java.util.*;
+ class MyStack {
+    // Queue<String> q=new Queue<>(); 
+    ArrayDeque<Integer> q2;
+
+     public MyStack() {
+        // java.util.Stack st=new Stack<>(); 
+        
+         q2=new ArrayDeque<>();
+
+        // q.push(null);
+    }
+    
+    public void push(int x) {
+        // st.push(x); 
+        q2.push(x);
+    }
+    
+    public int pop() {
+        return q2.remove();
+    }
+    
+    public int top() {
+        return q2.peek();
+    }
+    
+    public boolean empty() {
+        return q2.isEmpty();
+    }
+}
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack obj = new MyStack();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.top();
+ * boolean param_4 = obj.empty();
+ */
